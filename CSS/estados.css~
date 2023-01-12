@@ -1,0 +1,24 @@
+/* en blanco */
+a:link{
+	color: #FFFFFF;
+
+}
+a:visited{
+	color: red;
+}
+a:hover{
+	background-color: #2E2EFE;
+	color: #FFF;
+}
+
+/* en negro */
+a.negro:link{
+	color: black;
+}
+a.negro:visited{
+	color: red;
+}
+a.negro:hover{
+	background-color: #2E2EFE;
+	color: black;
+}

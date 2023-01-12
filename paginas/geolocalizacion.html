@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GEOLOCALIZACIÓN</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/basicas.css" />
+		<link rel="stylesheet" type="text/css" href="../CSS/estados.css" />
+		<link rel="stylesheet" type="text/css" href="../CSS/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../CSS/modulos.css" />
+		<link rel="stylesheet" type="text/css" href="../CSS/temas.css" />
+</head>
+<body class="geolocalizacion">
+	<div class="contenedor">
+		<div class="cabecera">
+			<h2 class="titulo">Geolocalización</h2>
+		</div>
+		<div id="menu">
+			<a href="hacemos.html">¿Qué hacemos?</a>
+			<br><br><br>
+			<a href="infempresa.html">Nuestra empresa</a>
+			<br><br><br>
+			<a href="nuestraspizzas.html">Pizzas riquísimas</a>
+			<br><br><br>
+			<a href="https://gutispizzasopiniones.blogspot.com/2021/12/garcia-guarnido-la-mejor-pizzeria-en-la.html">Blog de opiniones</a>
+			<br><br><br>
+			<a href="geolocalizacion.html">Geolocalización</a>
+			<br><br><br>
+			<a href="contactar.html">Contacta con nostros</a>
+			<br><br><br>
+			<a href="redessociales.html">Redes Sociales</a>
+			<br><br><br>
+			<a href="../indice.html">Volver al indice</a>
+   	</div>	
+ 		<div id="contenido">
+			<br><button onclick="findMe()">Mostrar ubicación</button>
+			<div class="map"></div>	
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuT02auMK7BS20E3GVOFXf7YCmGPE_a10"></script>
+			<script>
+				function findMe(){
+				var output = document.getElementById('map');
+
+				// Verificar si soporta geolocalizacion
+				if (navigator.geolocation) {
+					output.innerHTML = "<p>Tu navegador soporta Geolocalizacion</p>";
+				}else{
+					output.innerHTML = "<p>Tu navegador no soporta Geolocalizacion</p>";
+				}
+
+				//Obtenemos latitud y longitud
+				function localizacion(posicion){
+					var latitude = posicion.coords.latitude;
+					var longitude = posicion.coords.longitude;
+				}
+
+				function error(){
+					output.innerHTML = "<p>No se pudo obtener tu ubicación</p>";
+				}
+
+				navigator.geolocation.getCurrentPosition(localizacion,error);
+
+				}
+
+			</script>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6348.61016169217!2d-3.879077061618909!3d37.28790272323558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1638712799132!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div id="pie">	
+			<br>Proximamente abriremos más locales, ¡Incluso en latinoamerica!
+		</div>
+	</div>		
+</body>
+</html>

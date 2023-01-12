@@ -1,0 +1,31 @@
+/* Etiquetas básicas usadas muchas veces */
+/* body */
+body{
+	font-family: Book Antiqua;
+	color: white;
+	font-size: 1.20em;
+	text-align: center;
+}
+div.bodynegro{
+	font-family: Book Antiqua;
+	color: black;
+	font-size: 1.15em;
+	text-align: center;
+}
+
+/* títulos */
+h2.titulo{
+	font-size: 2.10em;
+	font-family: Book Antiqua;
+	color: white;
+	text-align: center;
+}
+h2.tituloletrachula{
+	font-family: Brush Script MT;
+	color: white;
+	font-size: 2.5em;
+}
+h2.titulonegro{
+	font-size: 1.70em;
+	color: black;
+}

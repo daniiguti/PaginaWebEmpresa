@@ -1,0 +1,34 @@
+/* fondo de indice.html */
+body.indice{
+	background-image: url("../fotos/fondo3.jpg");	
+}
+
+/* fondo de hacemos.html */
+body.hacemos{
+	background-image: url("../fotos/fondo7.jpg");	
+}
+
+/* fondo de infempresa.html */
+body.infempresa{
+	background-image: url("../fotos/fondo22.jpg");
+}
+
+/* fondo de nuestraspizzas.html */
+body.nuestraspizzas{
+	background-color: white;
+}
+
+/* fondo de redessociales.html */
+body.redes{
+	background-image: url("../fotos/fondo4.jpg");
+}
+
+/* fondo de contactar.html */
+body.contactar{
+	background-image: url("../fotos/contactar.jpg");
+}
+
+/* fondo de geolocalizacion.html */
+body.geolocalizacion{
+	background-image: url("../fotos/fondo2.jpg");
+}
